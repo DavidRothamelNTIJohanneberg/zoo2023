@@ -1,0 +1,65 @@
+.background_img {
+    background-image: url("../img/animals/panda.jpeg");
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: grid;
+    grid-template-columns:1fr 70% 1fr;
+}
+
+.text_header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button_header {
+    display: flex;
+    justify-content: left;
+}
+
+main {
+    margin: 0px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.index_container {
+    width: 90%;
+    margin: 0px;
+}
+
+.text_main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+p {
+    background-color: lightblue;
+}
+
+footer {
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 10px;
+}
