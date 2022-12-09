@@ -6,11 +6,26 @@
 body {
     display: flex;
     justify-content: center;
+    background-image: url("../img/animals/flamingo.jpeg");
+    height: 100%;
+    margin: 0px;
+}
+
+#meny_container {
+    width: 70%;
+}
+
+#index_container {
+    width: 70%;
 }
 
 header {
+    width: 70%;
     display: grid;
     grid-template-columns:1fr 70% 1fr;
+    background-color: black;
+    color: white;
+    position: fixed; /* Ändra så att den blir fixed och sedan fixa så att den får rätt width*/
 }
 
 .text_header {
@@ -20,7 +35,50 @@ header {
 
 .button_header {
     display: flex;
-    justify-content: left;
+    justify-content: right;
+}
+
+.menu {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu:hover, menu:focus {
+    background-color: #2980B9; 
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropDownList {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0px;
+}
+
+.dropDownList a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropDownList a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display:block;
 }
 
 main {
@@ -44,10 +102,6 @@ article {
     flex-wrap: wrap;
 }
 
-p {
-    background-color: lightblue;
-}
-
 footer {
     display: flex;
     color: white;
@@ -62,4 +116,28 @@ ul {
 
 li {
     margin: 10px;
+}
+
+.bg_lblue {
+    background-color: lightblue;
+}
+
+.full_width {
+    width: 100%;
+}
+
+#h2_index {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+#p_index {
+    margin: 0px;
+}
+
+.meny_card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1rem;
 }

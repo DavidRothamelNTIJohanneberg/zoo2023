@@ -5,25 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="/js/menu.js"></script>
     <title>Davids Zoo/Restaurang</title>
 </head>
 <body>
-    <div class="index_container">
+    <div id="index_container">
         <header>
             <h1></h1>
             <div class="text_header">
                 <h1>Välkommen till Zoo-et</h1>
             </div>
             <div class="button_header">
-                <button id="menu"><img src="" alt=""></button>
+                <div class="dropdown">
+                    <button class="menu" onclick="menuFunction()">=</button>
+                    <div class="dropDownList" id="index_dropDownList">
+                            <a href="/meny.html">Menyn</a>
+                            <a href="/omoss.html">Om oss</a>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
                 <article>
-                    <img src="img/animals/panda.jpeg" alt="">
                     <div class="text_main">
-                        <h2>Goddagens</h2>
-                        <p>
+                        <h2 class="bg_lblue full_width" id="h2_index">Goddagens</h2>
+                        <p class="bg_lblue full_width" id="p_index">
                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, error magnam? Fugit cumque harum minus voluptatem, dolore officia, aliquid excepturi natus rerum doloremque impedit? Doloremque voluptates quidem placeat magni laudantium!
                            Doloremque ad blanditiis, architecto autem fugiat similique quia eum, dicta perspiciatis sunt quas necessitatibus corporis quis neque incidunt molestiae tempore? Id nobis possimus, beatae amet expedita odio? Alias, exercitationem itaque?
                            Neque magnam temporibus officiis natus placeat sint asperiores veritatis assumenda sit odit repudiandae blanditiis amet, nesciunt eos unde. Praesentium aspernatur facere eveniet impedit vero? Aut repellendus unde quia ratione similique.
