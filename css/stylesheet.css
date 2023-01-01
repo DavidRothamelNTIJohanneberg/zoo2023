@@ -8,12 +8,14 @@
     background-color: wheat;
 }
 
-#animals{
+#animals {
     grid-area: dj;
     display: grid;
-    grid-template-areas: 
-    "bj rp"
-    "ho ho";
+    grid-template-columns: 50%;
+    grid-template-rows: 50%;
+    grid-template-areas:
+        "bj rp"
+        "ho ho";
     border-color: black;
     border-width: 5px;
 }
@@ -42,8 +44,8 @@ article {
 #bjorn {
     grid-area: bj;
     display: flex;
-    background-image: url("../img/animals/brunbjorn.jpg");
-    background-size: contain;
+    background-image: url("../img/animals/is_bjorn.jpg  ");
+    background-size: cover;
     align-items: end;
 }
 
@@ -54,7 +56,8 @@ article {
 body {
     display: flex;
     justify-content: center;
-    background-image: url("../img/animals/flamingo.jpeg");
+    background-image: url("../img/other/lake_forest.jpg");
+    background-size: cover;
     height: 100%;
     margin: 0px;
 }
@@ -65,10 +68,21 @@ body {
 }
 
 .card_omOss {
+    width: 70%;
     display: grid;
-    grid-template-areas: 
-    "h3 h3"
-    "img p";
+    justify-items: center;
+    grid-template-areas:
+        "h3 h3"
+        "img p";
+    border-style: solid;
+    border-radius: 20px;
+    background-color: wheat;
+    padding: 10px;
+    margin: 5px;
+}
+
+.card_omOss > p {
+    margin: 5px;
 }
 
 .center {
@@ -100,7 +114,7 @@ body {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 90px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     right: 0px;
 }
@@ -116,7 +130,7 @@ body {
     background-color: #ddd;
 }
 
-footer {    
+footer {
     width: 100vw;
     display: flex;
     color: white;
@@ -150,17 +164,18 @@ footer {
 header {
     width: 70%;
     display: grid;
-    grid-template-columns:1fr 70% 1fr;
+    grid-template-columns: 1fr 70% 1fr;
     background-color: black;
     color: white;
-    position: fixed; /* Ändra så att den blir fixed och sedan fixa så att den får rätt width*/
+    position: fixed;
+    /* Ändra så att den blir fixed och sedan fixa så att den får rätt width*/
 }
 
 #hona {
     grid-area: ho;
     display: flex;
     background-image: url("../img/animals/spraklig_hona.jpg");
-    background-size: contain;
+    background-size: cover;
     align-items: end;
 }
 
@@ -217,7 +232,7 @@ main {
 }
 
 .menu:hover menu:focus {
-    background-color: #2980B9; 
+    background-color: #2980B9;
 }
 
 .meny_card {
@@ -240,7 +255,6 @@ main {
 .meny_img_small {
     border-radius: 999999999px;
     width: 145.5px;
-    height: 194.25;
 }
 
 #meny_main {
@@ -252,10 +266,7 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #2980B9;
-    width: 70%;
 }
-
 #oppettider {
     /*Lägg till en snygg bg colour*/
     grid-area: ot;
@@ -269,11 +280,12 @@ main {
 #p_index {
     margin: 0px;
 }
+
 #red_panda {
     grid-area: rp;
     display: flex;
     background-image: url("../img/animals/red_panda.jpg");
-    background-size: contain;
+    background-size: cover;
     align-items: end;
 }
 
@@ -282,7 +294,7 @@ main {
 }
 
 .show {
-    display:block;
+    display: block;
 }
 
 #starters {
@@ -318,9 +330,9 @@ main {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: auto auto;
-    grid-template-areas: 
-    "ot dj"
-    "ak dj";
+    grid-template-areas:
+        "ot dj"
+        "ak dj";
     width: 100%;
     height: 87vh;
     margin-left: 5px;
